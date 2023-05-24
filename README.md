@@ -5,7 +5,7 @@ Visual Story Telling
 </h2>
 
 <h4 align='center'> Project Description </h4> 
-<font color="red"> Add project Description </font>
+Add description
 <br>
 
 ### Technical Skills 
