@@ -18,7 +18,7 @@ Add description
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 <br>
-
+<!-- 
 ### Installing Machine Learning Libraries
 ##### TensorFlow
       !pip install tensorflow
@@ -31,7 +31,7 @@ Add description
 ##### NumPy
       !pip install numpy
 ##### Matplotlib
-      !pip install matplotlib
+      !pip install matplotlib -->
       
 ### Notes
 * Story Generation
@@ -41,7 +41,7 @@ Add description
   * Libraries
       * TextBox
   * New Algorithms - Involving Decoding/Loss/Architecture Updates
-      * Hierarchical Neural Story Generation ![#f03c15] (https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`(Attention)
+      * Hierarchical Neural Story Generation (Attention)
       * Progressive Generation of Long Text with Pretrained Language Models (Architecture)
       * MOCHA (Loss)
       * Towards Inter-character Relationship-driven Story Generation (Architecture)
