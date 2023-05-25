@@ -49,7 +49,13 @@ Add description
 1) Story Telling
    * Literature Sruvey for Story Generation ✔️
    * Create a methodology for generating stories ✔️ 
-   * Implement Story Generation 🟡
+   * Implement Story Generation
+      * Download the datasets - CMU Summary and _________ 🟡
+      * Run BookNLP for the Character Clustering 
+      * GPT3/ChatGPT based code implementation for plot development  
+      * Create the Plot-Story dataset 
+      * Train the T5/BART model on this dataset with custom loss function 
+      * Evaluate the generation on the performance metrics 
 2) Visual Conversion
    * Literature Survey for Text-to-Image 
    * Methodology 
