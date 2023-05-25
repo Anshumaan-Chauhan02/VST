@@ -33,6 +33,11 @@ Add description
 ##### Matplotlib
       !pip install matplotlib -->
 
+### Methodology 
+1) Story Telling
+   * We will generate a plan and then conditioned on it the story will be generated. Plan will be constructed using a decoder only model (say GPT3/ChatGPT), where the input to the model will be list of characters, genre and the relationships between them. Then the generated basic plot will be taken in as input by the encoder-decoder model (T5/BART), conditioned on the sentence wise plot (and already generated text), storyline will be continously generated. Final generated story is then compared with the movie summary. 
+2) Vision Conversion
+   * TO DO
 ### Tasks 
 1) Story Telling
    * Literature Sruvey for Story Generation ✔️
