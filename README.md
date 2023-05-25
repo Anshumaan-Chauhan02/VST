@@ -39,6 +39,9 @@ Add description
    * Decoder Only Model - May use few shot learning with a variety of examples from different genres, use a prompt based strategy for generating plots 
    * Decoding strategies: Nucleus sampling with top-k=10 and p=0.9
    * Dataset: CMU Movie Summary along with another summary based dataset
+   * Getting characters and relations
+      * Character Name Clustering: https://github.com/dbamman/book-nlp
+      * Sentiment: https://www.nltk.org/howto/sentiment.html 
    * Loss function: $L_{Gen}$ + $L_{Review}$. First one corresponds to the normal cross entropy/negative log likelihood, whereas the second one is the difference between the log probability scores of the actual vs perturbed summary
 2) Vision Conversion
    * TO DO
