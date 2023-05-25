@@ -45,8 +45,8 @@ Add description
 ### Tasks 
 1) Story Telling
    * Literature Sruvey for Story Generation ✔️
-   * Create a methodology for generating stories 🟡
-   * Implement Story Generation
+   * Create a methodology for generating stories ✔️ 
+   * Implement Story Generation 🟡
 2) Visual Conversion
    * Literature Survey for Text-to-Image 
    * Methodology 
