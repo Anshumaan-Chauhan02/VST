@@ -32,3 +32,24 @@ Add description
       !pip install numpy
 ##### Matplotlib
       !pip install matplotlib
+      
+### Notes
+*  Story Generation
+      * Interface Based Papers
+            * WordCraft
+            * Story Centaur
+      * Libraries
+            * TextBox
+      * New Algorithms - Involving Decoding/Loss/Architecture Updates
+            * Hierarchical Neural Story Generation (Attention)
+            * Progressive Generation of Long Text with Pretrained Language Models (Architecture)
+            * MOCHA (Loss)
+            * Towards Inter-character Relationship-driven Story Generation (Architecture)
+            * Little Red Riding Hood Goes Around the Globe (Prompting)
+            * Future Sight Can Very Large Pretrained Language Models Learn Story Telling With a Few Examples (Architecture)
+            * The Stable Entropy Hypothesis and Entropy Aware Decoding (Decoding)
+      * Datasets
+            * Visual Writing Prompts 
+      * Metrics  
+            * Delta Score
+            
