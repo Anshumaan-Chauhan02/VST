@@ -34,8 +34,14 @@ Add description
       !pip install matplotlib -->
 
 ### Tasks 
-* Literature Sruvey for Story Generation ✔️
-* Literature Survey for Text-to-Image 🟡
+1) Story Telling
+  * Literature Sruvey for Story Generation ✔️
+  * Create a methodology for generating stories 🟡
+  * Implement Story Generation
+2) Visual Conversion
+  * Literature Survey for Text-to-Image 
+  * Methodology 
+  * Implementation
 ### Notes
 * Story Generation
   * Interface Based Papers
