@@ -41,7 +41,7 @@ Add description
   * Libraries
       * TextBox
   * New Algorithms - Involving Decoding/Loss/Architecture Updates
-      * Hierarchical Neural Story Generation (Attention)
+      * Hierarchical Neural Story Generation ![#f03c15] (https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`(Attention)
       * Progressive Generation of Long Text with Pretrained Language Models (Architecture)
       * MOCHA (Loss)
       * Towards Inter-character Relationship-driven Story Generation (Architecture)
