@@ -38,7 +38,7 @@ Add description
    * Basic Proposed Structure: We will generate a plan and then conditioned on it the story will be generated. Plan will be constructed using a decoder only model (say GPT3/ChatGPT), where the input to the model will be list of characters, genre and the relationships between them. Then the generated basic plot will be taken in as input by the encoder-decoder model (T5/BART), conditioned on the sentence wise plot (and already generated text), storyline will be continously generated. Final generated story is then compared with the movie summary. 
    * Decoder Only Model - May use few shot learning with a variety of examples from different genres, use a prompt based strategy for generating plots 
    * Decoding strategies: Nucleus sampling with top-k=10 and p=0.9
-   * Dataset: CMU Movie Summary along with another summary based dataset
+   * Dataset: CMU Movie Summary, Scifi TV Shows, Writing Prompts
    * Getting characters and relations
       * Character Name Clustering: https://github.com/dbamman/book-nlp
       * Sentiment: https://www.nltk.org/howto/sentiment.html 
@@ -50,8 +50,8 @@ Add description
    * Literature Sruvey for Story Generation ✔️
    * Create a methodology for generating stories ✔️ 
    * Implement Story Generation
-      * Download the datasets - CMU Summary and _________ 🟡
-      * Run BookNLP for the Character Clustering 
+      * Download the datasets - CMU Movie Summary, Scifi TV Shows, Writing Prompts ✔️
+      * Run BookNLP for the Character Clustering on all the datasets 🟡
       * GPT3/ChatGPT based code implementation for plot development  
       * Create the Plot-Story dataset 
       * Train the T5/BART model on this dataset with custom loss function 
