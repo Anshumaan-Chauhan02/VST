@@ -35,7 +35,11 @@ Add description
 
 ### Methodology 
 1) Story Telling
-   * We will generate a plan and then conditioned on it the story will be generated. Plan will be constructed using a decoder only model (say GPT3/ChatGPT), where the input to the model will be list of characters, genre and the relationships between them. Then the generated basic plot will be taken in as input by the encoder-decoder model (T5/BART), conditioned on the sentence wise plot (and already generated text), storyline will be continously generated. Final generated story is then compared with the movie summary. 
+   * Basic Proposed Structure: We will generate a plan and then conditioned on it the story will be generated. Plan will be constructed using a decoder only model (say GPT3/ChatGPT), where the input to the model will be list of characters, genre and the relationships between them. Then the generated basic plot will be taken in as input by the encoder-decoder model (T5/BART), conditioned on the sentence wise plot (and already generated text), storyline will be continously generated. Final generated story is then compared with the movie summary. 
+   * Decoder Only Model - May use few shot learning with a variety of examples from different genres, use a prompt based strategy for generating plots 
+   * Decoding strategies: Nucleus sampling with top-k=10 and p=0.9
+   * Dataset: CMU Movie Summary along with another summary based dataset
+   * Loss function: $L_Gen$ + $L_Review$. First one corresponds to the normal cross entropy/negative log likelihood, whereas the second one is the difference between the log probability scores of the actual vs perturbed summary
 2) Vision Conversion
    * TO DO
 ### Tasks 
