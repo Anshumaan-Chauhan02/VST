@@ -51,7 +51,7 @@ Add description
    * Create a methodology for generating stories ✔️ 
    * Implement Story Generation
       * Download the datasets - CMU Movie Summary, Scifi TV Shows, Writing Prompts ✔️
-      * Run BookNLP for the Character Clustering on all the datasets 🟡
+      * Run BookNLP for the Character Clustering on all the datasets - Almost done 🟡
       * GPT3/ChatGPT based code implementation for plot development  
       * Create the Plot-Story dataset 
       * Train the T5/BART model on this dataset with custom loss function 
