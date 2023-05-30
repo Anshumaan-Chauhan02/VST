@@ -71,7 +71,7 @@ Add description
       * Hierarchical Neural Story Generation (Attention) 🟢
       * Progressive Generation of Long Text with Pretrained Language Models (Architecture) 🟢
       * MOCHA (Loss) 🟢
-      * Towards Inter-character Relationship-driven Story Generation (Architecture) 🔴
+      * Towards Inter-character Relationship-driven Story Generation (Architecture) 🟢
       * Little Red Riding Hood Goes Around the Globe (Prompting) 🟢
       * Future Sight Can Very Large Pretrained Language Models Learn Story Telling With a Few Examples (Architecture) 🔴
       * The Stable Entropy Hypothesis and Entropy Aware Decoding (Decoding) 🔴
