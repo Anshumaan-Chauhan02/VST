@@ -50,7 +50,7 @@ Add description
    * Literature Sruvey for Story Generation ✔️
    * Create a methodology for generating stories ✔️ 
    * Implement Story Generation
-      * Download the datasets - CMU Movie Summary, Scifi TV Shows, Writing Prompts ✔️
+      * Download the datasets - CMU Movie Summary (🟢), CMU Book Summary (🟢),  Scifi TV Shows (🔴), Writing Prompts (🔴) ✔️
       * Run BookNLP for the Character Clustering on all the datasets ✔️
       * GPT3/ChatGPT based code implementation for plot development   - Take the relationship set, genre and the movie name as input, and generate a 1-2 line plot from it 
       * Create the Plot-Story dataset 
