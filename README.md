@@ -81,3 +81,7 @@ Add description
   * Metrics  
       * Delta Score 🟢
             
+### Future Works
+* Create a custom sentiment analyzer
+* Dataset expansion
+* Apply on long form story generation
