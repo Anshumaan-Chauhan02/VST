@@ -83,5 +83,6 @@ Add description
             
 ### Future Works
 * Create a custom sentiment analyzer
-* Dataset expansion
+* Plot Generation given the following components: Characters, Genre, Title, and Inter-Character Relations
+* Dataset expansion for better training 
 * Apply on long form story generation
