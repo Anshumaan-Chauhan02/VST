@@ -53,8 +53,9 @@ Add description
    * Create a methodology for generating stories ✔️ 
    * Implement Story Generation
       * Download the datasets - CMU Movie Summary (🟢), CMU Book Summary (🟢),  Scifi TV Shows (🔴), Writing Prompts (🔴) ✔️
-      * Run BookNLP for the Character Clustering on all the datasets 🟡
-      * Divide the dataset into subparts and run BookNLP ✔️
+      * Run BookNLP for the Character Clustering on all the datasets ✔️
+      * Divide the dataset into subparts and run BookNLP 🟡
+      * Merging of Book and Movie datasets
       * GPT3/ChatGPT based code implementation for plot development - Give summary as an input and generate a plot ✔️
       * Create the Plot-Story dataset 🟡
       * Train the T5/BART model on this dataset with custom loss function - Take the relationship set, genre, the story name and plot as an input, and generate a story conditioned on the inputs - Plot conditioned Story Generation. Loss function - Cross Entropy Loss + Rating loss given by ChatGPT. ChatGPT  - a rating between 0 and 10, where 0 is the best whereas 10 is the worst. 
