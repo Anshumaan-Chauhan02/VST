@@ -44,6 +44,7 @@ Add description
    * Adversarial Inputs
       * Plot given to the ChatGPT model is empty 
       * Rating to an i) empty, ii) non coherent, iii) Non interesting and iv) Combinations of previous aspects summary given by ChatGPT
+      * Missing information to the model (although trained on such inputs) - missing title/ missing genre/ missing characters/ missing relations
 2) Vision Conversion
    * TO DO
 ### Tasks 
