@@ -53,8 +53,8 @@ Add description
       * Divide the dataset into subparts and run BookNLP ✔️
       * GPT3/ChatGPT based code implementation for plot development - Give summary as an input and generate a plot ✔️
       * Create the Plot-Story dataset 🟡
-      * Train the T5/BART model on this dataset with custom loss function - Take the relationship set, genre, the story name and plot as an input, and generate a story conditioned on the inputs - Plot conditioned Story Generation
-      * Evaluate the generation on the performance metrics 
+      * Train the T5/BART model on this dataset with custom loss function - Take the relationship set, genre, the story name and plot as an input, and generate a story conditioned on the inputs - Plot conditioned Story Generation. Loss function - Cross Entropy Loss + Rating loss given by ChatGPT. ChatGPT  - a rating between 0 and 10, where 0 is the best whereas 10 is the worst. 
+      * Evaluate the generation on the performance metrics - BLEU score - try different decoding strategies 
 2) Visual Conversion
    * Literature Survey for Text-to-Image 
    * Methodology 
