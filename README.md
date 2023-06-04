@@ -41,6 +41,9 @@ Add description
       * Character Name Clustering: [https://github.com/dbamman/book-nlp](https://github.com/booknlp/booknlp)
       * Sentiment: https://www.nltk.org/howto/sentiment.html 
    * Loss function: $L_{Gen}$ + $L_{Review}$. First one corresponds to the normal cross entropy/negative log likelihood, whereas the second one is the difference between the log probability scores of the actual vs perturbed summary
+   * Adversarial Inputs
+      * Plot given to the ChatGPT model is empty 
+      * Rating to an i) empty, ii) non coherent, iii) Non interesting and iv) Combinations of previous aspects summary given by ChatGPT
 2) Vision Conversion
    * TO DO
 ### Tasks 
