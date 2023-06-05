@@ -22,7 +22,13 @@ Add description
       !pip install tensorflow
 ##### Keras
       !pip install keras
-##### PyTorch
+##### Transformers
+      !pip install transformers
+##### OpenAI
+      !pip install openai
+##### Sklearn
+      !pip install sklearn 
+##### PyTorch (Check CPU/GPU Compatibility)
       https://pytorch.org/get-started/locally/
 ##### Pandas
       !pip install pandas
@@ -54,12 +60,12 @@ Add description
    * Implement Story Generation
       * Download the datasets - CMU Movie Summary (🟢), CMU Book Summary (🟢),  Scifi TV Shows (🔴), Writing Prompts (🔴) ✔️
       * Run BookNLP for the Character Clustering on all the datasets ✔️
-      * Divide the dataset into subparts and run BookNLP 🟡
-      * Merging of Book and Movie datasets (Will do manually) 🟡
+      * Divide the dataset into subparts and run BookNLP ✔️
+      * Merging of Book and Movie datasets (Will do manually) 🟡 (60% done)
       * GPT3/ChatGPT based code implementation for plot development - Give summary as an input and generate a plot ✔️
-      * Create the Plot-Story dataset 🟡
+      * Create the Plot-Story dataset 🟡 (Coding aspect almost done)
       * Train the T5/BART model on this dataset with custom loss function - Take the relationship set, genre, the story name and plot as an input, and generate a story conditioned on the inputs - Plot conditioned Story Generation. Loss function - Cross Entropy Loss + Rating loss given by ChatGPT. ChatGPT  - a rating between 0 and 10, where 0 is the best whereas 10 is the worst. 🟡
-      * Use PEFT, such as using Adapters for the T5 model - Faster and Efficient
+      * Use PEFT, such as using Adapters for the T5 model - Faster and Efficient 🟡
       * Evaluate the generation on the performance metrics - BLEU score - try different decoding strategies 🟡
 2) Visual Conversion
    * Literature Survey for Text-to-Image 
