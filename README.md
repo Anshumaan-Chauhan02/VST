@@ -64,9 +64,9 @@ Add description
       * Merging of Book and Movie datasets ✔️
       * GPT3/ChatGPT based code implementation for plot development - Give summary as an input and generate a plot ✔️
       * Create the Plot-Story dataset 🟡 (Implementation ✔️)
-      * Loss function - Cross Entropy Loss (✔️) + Rating loss given by ChatGPT. ChatGPT  - a rating between 0 and 10, where 0 is the best whereas 10 is the worst (✔️).  ✔️
-      * Train the T5/BART model on this dataset with custom loss function - Take the relationship set, genre, the story name and plot as an input, and generate a story conditioned on the inputs - Plot conditioned Story Generation (Error).  🟡 
-      * Use PEFT, such as using Adapters/LoRA/Prefix Finetuning for the T5 model - Faster and Efficient (Not completely decided to implement this)🟡
+      * Loss function - Cross Entropy Loss (✔️) + Rating loss given by ChatGPT. ChatGPT  - a rating between 0 and 10, where 0 is the best whereas 10 is the worst (✔️).  (Implementation ✔️) 
+      * Train the T5/BART model on this dataset with custom loss function - Take the relationship set, genre, the story name and plot as an input, and generate a story conditioned on the inputs - Plot conditioned Story Generation (Error). (Add the training on custom loss function to the Future work) (Implementation ✔️) 
+      * Use PEFT, such as using Adapters/LoRA/Prefix Finetuning for the T5 model - Faster and Efficient (Not completely decided to implement this) 🟡
       * Evaluate the generation on the performance metrics - BLEU score - try different decoding strategies 🟡
 2) Visual Conversion
    * Literature Survey for Text-to-Image 
