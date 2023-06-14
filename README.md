@@ -67,7 +67,7 @@ Add description
       * Divide the dataset into subparts and run BookNLP ✔️
       * Merging of Book and Movie datasets ✔️
       * GPT3/ChatGPT based code implementation for plot development - Give summary as an input and generate a plot ✔️
-      * Create the Plot-Story dataset 🟡 (Implementation ✔️) - 75% created
+      * Create the Plot-Story dataset ✔️
       * Loss function ✔️
          * Cross Entropy Loss (✔️) 
          * Rating loss given by ChatGPT (ChatGPT gives a rating between 0 and 10, where 0 is the best whereas 10 is the worst) (✔️)  
