@@ -71,7 +71,7 @@ Add description
       * Loss function ✔️
          * Cross Entropy Loss (✔️) 
          * Rating loss given by ChatGPT (ChatGPT gives a rating between 0 and 10, where 0 is the best whereas 10 is the worst) (✔️)  
-      * Train the T5/BART model on this dataset with custom loss function 
+      * Train the T5/BART model on this dataset with custom loss function 🟡
          * Take the relationship set, genre, the story name and plot as an input, and generate a story conditioned on the inputs - Plot conditioned Story Generation (✔️)
       * Use PEFT, such as using Adapters/LoRA/Prefix Finetuning for the T5 model - Faster and Efficient ✔️ 
          * LoRA (✔️)
