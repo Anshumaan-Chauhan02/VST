@@ -105,7 +105,10 @@ Add description
       * Delta Score 🟢
             
 ### Future Works
-* Create a custom sentiment analyzer
-* Plot Generation given the following components: Characters, Genre, Title, and Inter-Character Relations
-* Dataset expansion for better training 
-* Apply on long form story generation
+* Story Generation
+   * Create a custom sentiment analyzer
+   * Plot Generation given the following components: Characters, Genre, Title, and Inter-Character Relations
+   * Dataset expansion for better training 
+   * Apply on long form story generation
+* Text-to-Image
+   * TODO  
