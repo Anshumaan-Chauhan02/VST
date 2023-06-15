@@ -81,7 +81,7 @@ Add description
          * BLEU score - try different decoding strategies (✔️)
       * Generate Loss Curves (✔️)
 2) Visual Conversion
-   * Literature Survey for Text-to-Image 
+   * Literature Survey for Text-to-Image 🟡
    * Methodology 
    * Implementation
 ### Notes
