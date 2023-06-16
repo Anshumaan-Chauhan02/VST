@@ -77,7 +77,7 @@ Add description
          * LoRA (✔️)
          * Adapters (✔️) 
       * Train Decoder Only Models such as DistilGPT2 🟡
-      * Evaluate the generation on the performance metrics  
+      * Evaluate the generation on the performance metrics  🟡
          * Cross Entropy Loss (✔️)
          * BLEU score - try different decoding strategies (✔️)
       * Generate Loss Curves (✔️)
