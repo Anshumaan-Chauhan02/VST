@@ -77,7 +77,7 @@ Add description
          * LoRA (✔️)
          * Adapters (✔️) 
       * Evaluate the generation on the performance metrics 
-         * Perplexity (✔️)
+         * Cross Entropy Loss (✔️)
          * BLEU score - try different decoding strategies (✔️)
       * Generate Loss Curves (✔️)
 2) Visual Conversion
