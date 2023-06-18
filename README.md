@@ -77,7 +77,7 @@ Add description
          * LoRA (✔️)
          * Adapters (✔️) 
       * Train Decoder Only Models such as DistilGPT2 🟡
-         * DistilGPT2 on entire plot-summary dataset 
+         * DistilGPT2 on entire plot-summary dataset ✔️
          * Train on only Plot and Summaries (do not include Title, Characters, etc.).  
       * Evaluate the generation on the performance metrics  🟡
          * Cross Entropy Loss (✔️)
