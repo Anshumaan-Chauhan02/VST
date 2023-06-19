@@ -76,9 +76,9 @@ Add description
       * Use PEFT, such as using Adapters/LoRA/Prefix Finetuning for the T5 model - Faster and Efficient ✔️ 
          * LoRA (✔️)
          * Adapters (✔️) 
-      * Train Decoder Only Models such as DistilGPT2 ✔️
+      * Train Decoder Only Models such as DistilGPT2 🟡
          * DistilGPT2 on entire plot-summary dataset ✔️
-         * Train on only Plot and Summaries (do not include Title, Characters, etc.) 
+         * Train on only Plot and Summaries (do not include Title, Characters, etc.) 🟡
       * Evaluate the generation on the performance metrics  🟡 (BLEU and Perplexitry left)
          * Cross Entropy Loss (✔️)
          * BLEU score - try different decoding strategies (✔️)
