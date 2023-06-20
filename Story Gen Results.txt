@@ -1,0 +1,60 @@
+Basic:
+
+TrainOutput(global_step=8145, training_loss=1.4378625278461192, metrics={'train_runtime': 7758.5612, 'train_samples_per_second': 67.195, 'train_steps_per_second': 1.05, 'total_flos': 7.054339513044173e+16, 'train_loss': 1.4378625278461192, 'epoch': 15.0})
+
+{'eval_loss': 1.360207200050354,
+ 'eval_runtime': 19.5825,
+ 'eval_samples_per_second': 197.217,
+ 'eval_steps_per_second': 24.665,
+ 'epoch': 15.0}
+
+3.98
+
+LoRA:
+
+TrainOutput(global_step=8145, training_loss=1.6368920744819242, metrics={'train_runtime': 7028.0123, 'train_samples_per_second': 74.18, 'train_steps_per_second': 1.159, 'total_flos': 7.101560826259046e+16, 'train_loss': 1.6368920744819242, 'epoch': 15.0})
+
+{'eval_loss': 1.4845715761184692,
+ 'eval_runtime': 21.5247,
+ 'eval_samples_per_second': 179.421,
+ 'eval_steps_per_second': 22.439,
+ 'epoch': 15.0}
+
+4.41
+
+Adapters:
+
+TrainOutput(global_step=8145, training_loss=1.7210480373281873, metrics={'train_runtime': 6142.2723, 'train_samples_per_second': 84.877, 'train_steps_per_second': 1.326, 'total_flos': 7.118346527440896e+16, 'train_loss': 1.7210480373281873, 'epoch': 15.0})
+
+{'eval_loss': 1.5473278760910034,
+ 'eval_runtime': 19.6496,
+ 'eval_samples_per_second': 196.544,
+ 'eval_steps_per_second': 24.581,
+ 'epoch': 15.0}
+
+4.69
+
+DistilGPT2 - 15 epochs
+
+global step = 8125
+training loss = 2.1491
+train_time = 56632
+epoch = 15
+
+{'eval_loss': 3.0107593536376953,
+ 'eval_runtime': 18.2229,
+ 'eval_samples_per_second': 211.931,
+ 'eval_steps_per_second': 26.505}
+
+20.30
+
+DistilGPT2 - 30 epochs
+
+TrainOutput(global_step=16290, training_loss=1.0405259387049666, metrics={'train_runtime': 56691.3036, 'train_samples_per_second': 18.392, 'train_steps_per_second': 0.287, 'total_flos': 1.5087687350530867e+17, 'train_loss': 1.0405259387049666, 'epoch': 30.0})
+
+{'eval_loss': 3.186328649520874,
+ 'eval_runtime': 21.7643,
+ 'eval_samples_per_second': 177.446,
+ 'eval_steps_per_second': 22.192}
+
+24.20
