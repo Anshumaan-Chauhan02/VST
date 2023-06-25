@@ -84,8 +84,14 @@ Add description
       * Generate Loss Curves (✅)
 2) Visual Conversion
    * Literature Survey for Text-to-Image 🟡
+   * Generative AI 🟡
+      * VAE
+      * GAN
+      *  
    * Methodology 
    * Implementation
+
+
 ### Notes
 * Story Generation
   * Interface Based Papers
