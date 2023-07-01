@@ -87,11 +87,12 @@ Add description
    * Generative AI 🟡
       * VAE ✅
       * GAN ✅
-      * WGAN 🟡
-      * Conditional GAN
-      * Pix2Pix GAN
-      * Cycle GAN
-      * SRGAN
+         * DCGAN ✅
+         * WGAN 🟡
+         * Conditional GAN
+         * Pix2Pix GAN
+         * Cycle GAN
+         * SRGAN
    * Methodology 
    * Implementation
 
