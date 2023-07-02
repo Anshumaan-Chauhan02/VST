@@ -88,11 +88,13 @@ Add description
       * VAE ✅
       * GAN ✅
          * DCGAN ✅
-         * WGAN 🟡
-         * Conditional GAN
-         * Pix2Pix GAN
+         * WGAN ✅
+         * Conditional GAN ✅
+         * Pix2Pix GAN 
          * Cycle GAN
          * SRGAN
+         * DeepDream
+         * GauGAN
    * Methodology 
    * Implementation
 
