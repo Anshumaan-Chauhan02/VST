@@ -95,6 +95,8 @@ Add description
          * SRGAN
          * DeepDream
          * GauGAN
+         * PixelCNN
+         * StyleGAN
    * Methodology 
    * Implementation
 
