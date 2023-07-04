@@ -83,6 +83,7 @@ Add description
          * BLEU score - try different decoding strategies (✅)
       * Generate Loss Curves (✅)
 2) Visual Conversion
+   * Basline Implementation using a combination of StableDiffusion Model and Text conditioned image2image model ✅
    * Literature Survey for Text-to-Image 🟡
    * Generative AI 🟡
       * VAE ✅
