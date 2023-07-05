@@ -92,7 +92,7 @@ Add description
          * WGAN ✅
          * Conditional GAN ✅
          * Pix2Pix GAN ✅
-         * Cycle GAN
+         * Cycle GAN ✅
          * SRGAN
          * DeepDream
          * GauGAN
