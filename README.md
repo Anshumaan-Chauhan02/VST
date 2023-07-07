@@ -16,12 +16,8 @@ Add description
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 <br>
-<!-- 
+
 ### Installing Machine Learning Libraries
-##### TensorFlow
-      !pip install tensorflow
-##### Keras
-      !pip install keras
 ##### Transformers
       !pip install transformers
 ##### OpenAI
@@ -35,9 +31,9 @@ Add description
 ##### NumPy
       !pip install numpy
 ##### Matplotlib
-      !pip install matplotlib -->
+      !pip install matplotlib
 
-### Methodology 
+<!-- ### Methodology 
 1) Story Telling
    * Basic Proposed Structure: We will generate a plan and then conditioned on it the story will be generated. Plan will be constructed using a decoder only model (say GPT3/ChatGPT), where the input to the model will be list of characters, genre and the relationships between them. Then the generated basic plot will be taken in as input by the encoder-decoder model (T5/BART), conditioned on the sentence wise plot (and already generated text), storyline will be continously generated. Final generated story is then compared with the movie summary. 
    * Decoder Only Model - May use few shot learning with a variety of examples from different genres, use a prompt based strategy for generating plots 
@@ -121,7 +117,7 @@ Add description
       * Visual Writing Prompts 🟢
   * Metrics  
       * Delta Score 🟢
-            
+-->            
 ### Future Works
 * Story Generation
    * Create a custom sentiment analyzer
