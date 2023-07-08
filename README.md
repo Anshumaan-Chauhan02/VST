@@ -124,6 +124,8 @@ Add description
    * Plot Generation given the following components: Characters, Genre, Title, and Inter-Character Relations
    * Dataset expansion for better training 
    * Apply on long form story generation
-   * Train models on variations of the dataset such as - only Plot and Summaries (do not include Title, Characters, etc.) 
+   * Train models on variations of the dataset such as - only Plot and Summaries (do not include Title, Characters, etc.)
+   * Integrate more PEFT methodologies and compare their affects on the performance 
 * Text-to-Image
-   * TODO  
+   * Do a literature survey on the current image synthesis technologies
+   * Propose an architecture/methodology that is capable of scene transformation consitioned on text
