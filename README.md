@@ -39,6 +39,15 @@ Add description
    * CMU Movie Summary : http://www.cs.cmu.edu/~ark/personas/
    * CMU Books Summary : https://www.cs.cmu.edu/~dbamman/booksummaries.html
 ### How to run
+1) Download the datasets from the links provided and all the Python files from Github
+2) To extract the datasets into a proper DataFrame run Data_Exploration.ipynb 
+3) Run BookNLP.ipynb on both the datasets for the extraction of several features such as Characters, Inter-Character relations, etc.
+4) Execute ChatGPT_API.ipynb for generating plots for the summaries - Run them in batches as you'll receive errors due to saturation of requests at OpenAI server
+5) Once you have obtained plots for all the summaries, run Data_Merging.ipynb for combining all the batches
+6) Execute Data_Preparation_Story_Gen.ipynb for the extarction of Genre, Title, etc. from the processed dataset, now you have the Plot-Summary dataset
+7) For training T5 and DistilGPT models on this dataset run Story_Generation_T5.ipynb and Story_Generation_DistilGPT.ipynb files respectively
+8) Now you can test both the fine tuned model for the task of Story Generation
+9) Finally run Diffusion.ipynb for converting the generated story into a visual representation
 <!-- ### Methodology 
 1) Story Telling
    * Basic Proposed Structure: We will generate a plan and then conditioned on it the story will be generated. Plan will be constructed using a decoder only model (say GPT3/ChatGPT), where the input to the model will be list of characters, genre and the relationships between them. Then the generated basic plot will be taken in as input by the encoder-decoder model (T5/BART), conditioned on the sentence wise plot (and already generated text), storyline will be continously generated. Final generated story is then compared with the movie summary. 
@@ -128,7 +137,7 @@ Add description
 * Python Files:
    * BookNLP.ipynb.ipynb
       * Extraction of the Characters, their interactions and relevant sentiments for each pair of characters
-   * ChatGPT_API.ipynb.ipynb
+   * ChatGPT_API.ipynb
       * ChatGPT for using the Summaries and generating 2-3 lines plot from them 
    * Data_Exploration.ipynb
       *  Unzipping and Loading of the dataset
