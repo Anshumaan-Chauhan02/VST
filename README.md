@@ -119,7 +119,7 @@ Add description
       * Delta Score 🟢
 -->  
 ### File Content
-1. Python Files:
+1) Python Files:
   * BookNLP.ipynb.ipynb 
   * ChatGPT_API.ipynb.ipynb  
   * Data_Exploration.ipynb 
@@ -128,7 +128,7 @@ Add description
   * Diffusion.ipynb
   * Story_Generation_DistilGPT.ipynb
   * Story_Generation_T5.ipynb
-2. Docs
+2) Docs
   * Story Generation - Contains several papers researched for the task of Story Generation
   * Visual Conversion -  Research papers for Image Synthesis 
 ### Future Works
