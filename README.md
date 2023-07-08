@@ -32,8 +32,12 @@ Add description
       !pip install numpy
 ##### Matplotlib
       !pip install matplotlib
+##### BookNLP 
+      !pip install booknlp
 ### Dataset Information
-Add dataset information
+* Story Generation
+   * CMU Movie Summary : 
+   * CMU Books Summary :  
 ### How to run
 <!-- ### Methodology 
 1) Story Telling
@@ -122,14 +126,35 @@ Add dataset information
 -->  
 ### File Content
 1) Python Files:
-   * BookNLP.ipynb.ipynb 
-   * ChatGPT_API.ipynb.ipynb  
-   * Data_Exploration.ipynb 
-   * Data_Merging.ipynb 
+   * BookNLP.ipynb.ipynb
+      * Extraction of the Characters, their interactions and relevant sentiments for each pair of characters
+   * ChatGPT_API.ipynb.ipynb
+      * ChatGPT for using the Summaries and generating 2-3 lines plot from them 
+   * Data_Exploration.ipynb
+      *  Unzipping and Loading of the dataset
+      *  Preprocessing into a proper DataFrame
+      *  Extraction of gfeatures like Genre, Title, etc.
+   * Data_Merging.ipynb
+      * Merging of the Processed sub-parts of the dataset 
    * Dataset_Preparation_Story_Gen.ipynb
+      * Dropping of non-useful features
+      * Concatenating Books and Movie Summary datasets
+      * Processing dataset for conditional text generation 
    * Diffusion.ipynb
+      * Image Generation using two techniques:
+         * Text to Image generation using the first sentence and later performing text conditioned image to image generation
+         * Taking each sentence and performing a text based image generation (No knowledge about previously occured story)  
    * Story_Generation_DistilGPT.ipynb
+      * Dataset Processing (Tokenization and Data Split) for DistilGPT model
+      * Training the model on the processed dataset
+      * Testing model on Perplexity and BLEU score
+      * Plotting the Loss Curve
    * Story_Generation_T5.ipynb
+      * Dataset Processing (Tokenization and Data Split) for T5 model
+      * Training the model on the processed dataset using several PEFT techniques like LoRA and Adapters
+      * Creating a custom training loop utilizing a loss given by ChatGPT
+      * Testing model on Perplexity and BLEU score
+      * Plotting the Loss Curve
 2) Docs
    * Story Generation - Contains several papers researched for the task of Story Generation
    * Visual Conversion -  Research papers for Image Synthesis 
