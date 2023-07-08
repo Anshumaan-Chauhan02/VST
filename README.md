@@ -95,7 +95,7 @@ Add description
    * Train models on variations of the dataset such as - only Plot and Summaries (do not include Title, Characters, etc.)
    * Integrate more PEFT methodologies and compare their affects on the performance 
 * Text-to-Image
-   * Do a literature survey on the current image synthesis technologies
+   * Do a literature survey on the current image synthesis technologies 🟡
    * Propose an architecture/methodology that is capable of scene transformation conditioned on text
 
 <!-- ### Methodology 
