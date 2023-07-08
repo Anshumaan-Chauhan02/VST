@@ -34,10 +34,47 @@ Add description
       !pip install matplotlib
 ##### BookNLP 
       !pip install booknlp
+
 ### Dataset Information
 * Story Generation
    * CMU Movie Summary : http://www.cs.cmu.edu/~ark/personas/
    * CMU Books Summary : https://www.cs.cmu.edu/~dbamman/booksummaries.html
+  
+### File Content
+* Python Files:
+   * BookNLP.ipynb.ipynb
+      * Extraction of the Characters, their interactions and relevant sentiments for each pair of characters
+   * ChatGPT_API.ipynb
+      * ChatGPT for using the Summaries and generating 2-3 lines plot from them 
+   * Data_Exploration.ipynb
+      *  Unzipping and Loading of the dataset
+      *  Preprocessing into a proper DataFrame
+      *  Extraction of gfeatures like Genre, Title, etc.
+   * Data_Merging.ipynb
+      * Merging of the Processed sub-parts of the dataset 
+   * Dataset_Preparation_Story_Gen.ipynb
+      * Dropping of non-useful features
+      * Concatenating Books and Movie Summary datasets
+      * Processing dataset for conditional text generation 
+   * Diffusion.ipynb
+      * Image Generation using two techniques:
+         * Text to Image generation using the first sentence and later performing text conditioned image to image generation
+         * Taking each sentence and performing a text based image generation (No knowledge about previously occured story)  
+   * Story_Generation_DistilGPT.ipynb
+      * Dataset Processing (Tokenization and Data Split) for DistilGPT model
+      * Training the model on the processed dataset
+      * Testing model on Perplexity and BLEU score
+      * Plotting the Loss Curve
+   * Story_Generation_T5.ipynb
+      * Dataset Processing (Tokenization and Data Split) for T5 model
+      * Training the model on the processed dataset using several PEFT techniques like LoRA and Adapters
+      * Creating a custom training loop utilizing a loss given by ChatGPT
+      * Testing model on Perplexity and BLEU score
+      * Plotting the Loss Curve
+* Docs
+   * Story Generation - Contains several papers researched for the task of Story Generation
+   * Visual Conversion -  Research papers for Image Synthesis
+
 ### How to run
 1) Download the datasets from the links provided and all the Python files from Github
 2) To extract the datasets into a proper DataFrame run Data_Exploration.ipynb 
@@ -48,6 +85,19 @@ Add description
 7) For training T5 and DistilGPT models on this dataset run Story_Generation_T5.ipynb and Story_Generation_DistilGPT.ipynb files respectively
 8) Now you can test both the fine tuned model for the task of Story Generation
 9) Finally run Diffusion.ipynb for converting the generated story into a visual representation
+
+### Future Works
+* Story Generation
+   * Create a custom sentiment analyzer
+   * Plot Generation given the following components: Characters, Genre, Title, and Inter-Character Relations
+   * Dataset expansion for better training 
+   * Apply on long form story generation
+   * Train models on variations of the dataset such as - only Plot and Summaries (do not include Title, Characters, etc.)
+   * Integrate more PEFT methodologies and compare their affects on the performance 
+* Text-to-Image
+   * Do a literature survey on the current image synthesis technologies
+   * Propose an architecture/methodology that is capable of scene transformation conditioned on text
+
 <!-- ### Methodology 
 1) Story Telling
    * Basic Proposed Structure: We will generate a plan and then conditioned on it the story will be generated. Plan will be constructed using a decoder only model (say GPT3/ChatGPT), where the input to the model will be list of characters, genre and the relationships between them. Then the generated basic plot will be taken in as input by the encoder-decoder model (T5/BART), conditioned on the sentence wise plot (and already generated text), storyline will be continously generated. Final generated story is then compared with the movie summary. 
@@ -133,48 +183,3 @@ Add description
   * Metrics  
       * Delta Score 🟢
 -->  
-### File Content
-* Python Files:
-   * BookNLP.ipynb.ipynb
-      * Extraction of the Characters, their interactions and relevant sentiments for each pair of characters
-   * ChatGPT_API.ipynb
-      * ChatGPT for using the Summaries and generating 2-3 lines plot from them 
-   * Data_Exploration.ipynb
-      *  Unzipping and Loading of the dataset
-      *  Preprocessing into a proper DataFrame
-      *  Extraction of gfeatures like Genre, Title, etc.
-   * Data_Merging.ipynb
-      * Merging of the Processed sub-parts of the dataset 
-   * Dataset_Preparation_Story_Gen.ipynb
-      * Dropping of non-useful features
-      * Concatenating Books and Movie Summary datasets
-      * Processing dataset for conditional text generation 
-   * Diffusion.ipynb
-      * Image Generation using two techniques:
-         * Text to Image generation using the first sentence and later performing text conditioned image to image generation
-         * Taking each sentence and performing a text based image generation (No knowledge about previously occured story)  
-   * Story_Generation_DistilGPT.ipynb
-      * Dataset Processing (Tokenization and Data Split) for DistilGPT model
-      * Training the model on the processed dataset
-      * Testing model on Perplexity and BLEU score
-      * Plotting the Loss Curve
-   * Story_Generation_T5.ipynb
-      * Dataset Processing (Tokenization and Data Split) for T5 model
-      * Training the model on the processed dataset using several PEFT techniques like LoRA and Adapters
-      * Creating a custom training loop utilizing a loss given by ChatGPT
-      * Testing model on Perplexity and BLEU score
-      * Plotting the Loss Curve
-* Docs
-   * Story Generation - Contains several papers researched for the task of Story Generation
-   * Visual Conversion -  Research papers for Image Synthesis 
-### Future Works
-* Story Generation
-   * Create a custom sentiment analyzer
-   * Plot Generation given the following components: Characters, Genre, Title, and Inter-Character Relations
-   * Dataset expansion for better training 
-   * Apply on long form story generation
-   * Train models on variations of the dataset such as - only Plot and Summaries (do not include Title, Characters, etc.)
-   * Integrate more PEFT methodologies and compare their affects on the performance 
-* Text-to-Image
-   * Do a literature survey on the current image synthesis technologies
-   * Propose an architecture/methodology that is capable of scene transformation conditioned on text
