@@ -125,7 +125,7 @@ Add description
       * Delta Score 🟢
 -->  
 ### File Content
-1) Python Files:
+* Python Files:
    * BookNLP.ipynb.ipynb
       * Extraction of the Characters, their interactions and relevant sentiments for each pair of characters
    * ChatGPT_API.ipynb.ipynb
@@ -155,7 +155,7 @@ Add description
       * Creating a custom training loop utilizing a loss given by ChatGPT
       * Testing model on Perplexity and BLEU score
       * Plotting the Loss Curve
-2) Docs
+* Docs
    * Story Generation - Contains several papers researched for the task of Story Generation
    * Visual Conversion -  Research papers for Image Synthesis 
 ### Future Works
