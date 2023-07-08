@@ -36,8 +36,8 @@ Add description
       !pip install booknlp
 ### Dataset Information
 * Story Generation
-   * CMU Movie Summary : 
-   * CMU Books Summary :  
+   * CMU Movie Summary : http://www.cs.cmu.edu/~ark/personas/
+   * CMU Books Summary : https://www.cs.cmu.edu/~dbamman/booksummaries.html
 ### How to run
 <!-- ### Methodology 
 1) Story Telling
