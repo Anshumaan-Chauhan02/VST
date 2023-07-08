@@ -117,7 +117,20 @@ Add description
       * Visual Writing Prompts 🟢
   * Metrics  
       * Delta Score 🟢
--->            
+-->  
+### File Content
+1. Python Files:
+  * BookNLP.ipynb.ipynb 
+  * ChatGPT_API.ipynb.ipynb  
+  * Data_Exploration.ipynb 
+  * Data_Merging.ipynb 
+  * Dataset_Preparation_Story_Gen.ipynb
+  * Diffusion.ipynb
+  * Story_Generation_DistilGPT.ipynb
+  * Story_Generation_T5.ipynb
+2. Docs
+  * Story Generation - Contains several papers researched for the task of Story Generation
+  * Visual Conversion -  Research papers for Image Synthesis 
 ### Future Works
 * Story Generation
    * Create a custom sentiment analyzer
