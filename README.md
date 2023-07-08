@@ -5,8 +5,14 @@ Visual Story Telling
 </h2>
 
 <h4 align='center'> Project Description </h4> 
-Add description
+Massive Large Language Models such as GPT2, GPT3, PaLM and Llama are rated highly on the task of text generation, however when we explore story generation , then these models often suffer from the problems such as inconsistency, adding new facts such as characters and plot out of nowhere, and moving away from the storyline. To overcome these facts, we are proposing a framework called Visual Story Telling, which comprises of a text generation model and Stable DIffusion Mpdel. Text Generation model is fine tuned on a custom created dataset for the task of content conditioned story generation which is inspired from Plan based/ Heorarchical Story Generation format. We proposed a dataset called Plot Summary Dataset which contains information such as Title, Plot, Characters, Inter-Character Relations and Genre, which are used to condition the output of DistilGPT and T5. This generated story is then utilized by Stable Diffusion models for the task of visual conversion in a sentence by sentence format. 
 <br>
+
+### Inference
+1) T5 model suffers from huge amount of repetition as compared to DistilGPT model
+2) Even though we trained the models for a decent amount of epochs, they still tend to generate new characters that are not provided in the input 
+3) Although PEFT methods speeds up the process of Finetuning by ~15%, but they also do affect the perfomance of the model on the downstream task
+4) Stable Diffusion models and several other Text consitioned Image Synthesis models are incapable of performing Scene Transition
 
 ### Technical Skills 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
