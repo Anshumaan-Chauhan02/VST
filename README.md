@@ -168,4 +168,4 @@ Add description
    * Integrate more PEFT methodologies and compare their affects on the performance 
 * Text-to-Image
    * Do a literature survey on the current image synthesis technologies
-   * Propose an architecture/methodology that is capable of scene transformation consitioned on text
+   * Propose an architecture/methodology that is capable of scene transformation conditioned on text
