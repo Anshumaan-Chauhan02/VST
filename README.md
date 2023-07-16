@@ -5,14 +5,14 @@ Visual Story Telling
 </h2>
 
 <h4 align='center'> Project Description </h4> 
-Massive Large Language Models such as GPT2, GPT3, PaLM and Llama are rated highly on the task of text generation, however when we explore story generation - the task of generating synthetic coherent and fluent story , then these models often suffer from the problems such as inconsistency, adding new facts such as characters and plot out of nowhere, and moving away from the storyline. To overcome these facts, we are proposing a framework called Visual Story Telling, which comprises of a text generation model and Stable Diffusion Model. Text Generation model is fine tuned on a custom created dataset for the task of content conditioned story generation which is inspired from Plan based/ Hierarchical Story Generation methodology. We proposed a dataset called Plot Summary Dataset which contains information such as Title, Plot, Characters, Inter-Character Relations and Genre, which are used to condition the output of DistilGPT and T5. This generated story is then utilized by Stable Diffusion models for the task of visual conversion in a sentence by sentence format. 
+Massive Large Language Models such as GPT2, GPT3, PaLM, and Llama are rated highly on the task of text generation, however when we explore story generation - the task of generating synthetic coherent and fluent story, then these models often suffer from the problems such as inconsistency, adding new facts such as characters and plot out of nowhere, and moving away from the storyline. To overcome these facts, we are proposing a framework called Visual Story Telling, which comprises a text generation model and Stable Diffusion Model. Text Generation model is fine-tuned on a custom-created dataset for the task of content-conditioned story generation which is inspired by Plan based/ Hierarchical Story Generation methodology. We proposed a dataset called Plot Summary Dataset which contains information such as Title, Plot, Characters, Inter-Character Relations, and Genre, which are used to condition the output of DistilGPT and T5. This generated story is then utilized by Stable Diffusion models for the task of visual conversion in a sentence-by-sentence format. 
 <br>
 
 ### Inference
-1) T5 model suffers from huge amount of repetition as compared to DistilGPT model
+1) T5 model suffers from a huge amount of repetition as compared to the DistilGPT model
 2) Even though we trained the models for a decent amount of epochs, they still tend to generate new characters that are not provided in the input 
-3) Although PEFT methods speeds up the process of Finetuning by ~15%, but they also do affect the perfomance of the model on the downstream task
-4) Stable Diffusion models and several other Text consitioned Image Synthesis models are incapable of performing Scene Transition
+3) Although PEFT methods speed up the process of Finetuning by ~15%, they also do affect the performance of the model on the downstream task
+4) Stable Diffusion models and several other Text conditioned Image Synthesis models are incapable of performing Scene Transition
 
 ### Technical Skills 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -43,19 +43,19 @@ Massive Large Language Models such as GPT2, GPT3, PaLM and Llama are rated highl
 
 ### Dataset Information
 * Story Generation
-   * CMU Movie Summary : http://www.cs.cmu.edu/~ark/personas/
-   * CMU Books Summary : https://www.cs.cmu.edu/~dbamman/booksummaries.html
+   * CMU Movie Summary: http://www.cs.cmu.edu/~ark/personas/
+   * CMU Books Summary: https://www.cs.cmu.edu/~dbamman/booksummaries.html
   
 ### File Content
 * Python Files:
    * BookNLP.ipynb.ipynb
-      * Extraction of the Characters, their interactions and relevant sentiments for each pair of characters
+      * Extraction of the Characters, their interactions, and relevant sentiments for each pair of characters
    * ChatGPT_API.ipynb
       * ChatGPT for using the Summaries and generating 2-3 lines plot from them 
    * Data_Exploration.ipynb
-      *  Unzipping and Loading of the dataset
+      *  Unzipping and Loading the dataset
       *  Preprocessing into a proper DataFrame
-      *  Extraction of gfeatures like Genre, Title, etc.
+      *  Extraction of features like Genre, Title, etc.
    * Data_Merging.ipynb
       * Merging of the Processed sub-parts of the dataset 
    * Dataset_Preparation_Story_Gen.ipynb
@@ -65,7 +65,7 @@ Massive Large Language Models such as GPT2, GPT3, PaLM and Llama are rated highl
    * Diffusion.ipynb
       * Image Generation using two techniques:
          * Text to Image generation using the first sentence and later performing text conditioned image to image generation
-         * Taking each sentence and performing a text based image generation (No knowledge about previously occured story)  
+         * Taking each sentence and performing a text-based image generation (No knowledge about previously occurred story)  
    * Story_Generation_DistilGPT.ipynb
       * Dataset Processing (Tokenization and Data Split) for DistilGPT model
       * Training the model on the processed dataset
@@ -82,24 +82,24 @@ Massive Large Language Models such as GPT2, GPT3, PaLM and Llama are rated highl
    * Visual Conversion -  Research papers for Image Synthesis
 
 ### How to run
-1) Download the datasets from the links provided and all the Python files from Github
+1) Download the datasets from the links provided and all the Python files from GitHub
 2) To extract the datasets into a proper DataFrame run Data_Exploration.ipynb 
-3) Run BookNLP.ipynb on both the datasets for the extraction of several features such as Characters, Inter-Character relations, etc.
-4) Execute ChatGPT_API.ipynb for generating plots for the summaries - Run them in batches as you'll receive errors due to saturation of requests at OpenAI server
+3) Run BookNLP.ipynb on both datasets for the extraction of several features such as Characters, Inter-Character relations, etc.
+4) Execute ChatGPT_API.ipynb for generating plots for the summaries - Run them in batches as you'll receive errors due to the saturation of requests at the OpenAI server
 5) Once you have obtained plots for all the summaries, run Data_Merging.ipynb for combining all the batches
-6) Execute Data_Preparation_Story_Gen.ipynb for the extarction of Genre, Title, etc. from the processed dataset, now you have the Plot-Summary dataset
+6) Execute Data_Preparation_Story_Gen.ipynb for the extraction of Genre, Title, etc. from the processed dataset, now you have the Plot-Summary dataset
 7) For training T5 and DistilGPT models on this dataset run Story_Generation_T5.ipynb and Story_Generation_DistilGPT.ipynb files respectively
-8) Now you can test both the fine tuned model for the task of Story Generation
+8) Now you can test both the fine-tuned model for the task of Story Generation
 9) Finally run Diffusion.ipynb for converting the generated story into a visual representation
 
 ### Future Works
 * Story Generation
    * Create a custom sentiment analyzer
-   * Plot Generation given the following components: Characters, Genre, Title, and Inter-Character Relations
+   * Plot Generation gave the following components: Characters, Genre, Title, and Inter-Character Relations
    * Dataset expansion for better training 
-   * Apply on long form story generation
+   * Apply on long-form story generation
    * Train models on variations of the dataset such as - only Plot and Summaries (do not include Title, Characters, etc.)
-   * Integrate more PEFT methodologies and compare their affects on the performance 
+   * Integrate more PEFT methodologies and compare their effects on the performance 
 * Text-to-Image
    * Do a literature survey on the current image synthesis technologies 🟡
    * Propose an architecture/methodology that is capable of scene transformation conditioned on text
